@@ -5,14 +5,16 @@
     <title>The Sprout Fund will sunset in 2018</title>
     <meta name="description" content="After 17 successful years, we are documenting our best practices, sharing our enduring values, principles, and legacy—and giving the rest of our money away." />
     <meta name="author"      content="The Sprout Fund" />
-    <meta name="viewport"    content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <!--Stylesheets-->
     <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/theme-greensea.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
@@ -64,7 +66,7 @@
   
   <body data-smooth-scroll-offset="77">
     <div class="nav-container"> </div>
-    <div class="main-container">
+    <div class="main-container" id="home">
             
       <!--Desktop Cover-->
       <section class="cover imagebg text-center height-100 d-none d-md-block unpad">
@@ -90,7 +92,7 @@
       </section>
 
       <!--Letter-->
-      <section class="switchable switchable--switch space--sm">
+      <section class="switchable switchable--switch space--sm" id="sunset">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-8">
@@ -114,12 +116,12 @@
       </section>
       
       <!--Final Plans-->
-      <section class="bg--secondary text-center">
+      <section class="bg--secondary text-center" id="plans">
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-lg-8">
               <h1>Final Plans</h1>
-              <p class="lead">Upon our sunset and as a investment in Pittsburgh’s bright future,<br/>we are documenting our best practices, sharing our enduring values,<br/>principles, and legacy—and giving the rest of our money away. </p>
+              <p class="lead">As a investment in Pittsburgh’s bright future, we are documenting our best practices, sharing our enduring values—and giving the rest of our money away. </p>
             </div>
           </div>
         </div>
@@ -133,7 +135,7 @@
                 <h4>Last Will &amp; Testament</h4>
                 <hr/>
                 <p class="text-left">We’ve looked back on the beliefs and ideals that guided our work from 2001 to 2018 and shared our reflections for Pittsburgh’s continued bright future. </p>
-                <a class="btn btn--primary" href="#" style="background-color: #fd9f06; border-color: #cc7f04"> <span class="btn__text">Read the Will &amp; Testament</span> </a>
+                <a class="btn btn--primary" href="https://medium.com/@sproutfund/last-will-testament-26ab31ee583c" target="_blank" style="background-color: #fd9f06; border-color: #cc7f04"> <span class="btn__text">Read the Will &amp; Testament</span> </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -141,8 +143,8 @@
                 <i class="icon icon-Medal-3"></i>
                 <h4>$1,000 Legacy Awards</h4>
                 <hr/>
-                <p class="text-left">We’re looking for the next generation of "Sprouters" who commit to carrying our vision forward.&nbsp;Nominate someone who exemplifies our ideals by May 4, 2018.</p>
-                <a class="btn btn--primary" href="#" style="background-color: #f96e00; border-color: #cc5c00"> <span class="btn__text">Submit a Nomination</span> </a>
+                <p class="text-left">We’re looking for the next generation of "Sprouters" who commit to carrying our vision forward. Nominate someone who exemplifies our ideals by May 4, 2018.</p>
+                <a class="btn btn--primary" href="https://sproutfund.typeform.com/to/TkgCWU" target="_blank" style="background-color: #f96e00; border-color: #cc5c00"> <span class="btn__text">Submit a Nomination</span> </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -151,19 +153,56 @@
                 <h4>Field Guides</h4>
                 <hr/>
                 <p class="text-left">We’re working hard to document nearly 20 years’ worth of lessons learned and best practices to help others lead. <i>Look for their release in early June 2018.</i><br></p>
-                <a class="btn btn--primary" href="#" style="background-color: #9f1200; border-color: #6b0c00"> <span class="btn__text">Learn More</span> </a>
+                <a class="btn btn--primary" href="#subscribe" style="background-color: #9f1200; border-color: #6b0c00"> <span class="btn__text">Learn More</span> </a>
               </div>
             </div>
           </div>
         </div>
+        <div class="modal-container" data-modal-id="subscribe">
+          <div class="modal-content">
+            <section class="imageblock feature-large bg--white border--round">
+              <div class="imageblock__content col-lg-5 col-md-3 pos-left">
+                <div class="background-image-holder"><img alt="image" src="img/sprouts_sized.jpg"></div>
+              </div>
+              <div class="container">
+                <div class="row justify-content-end">
+                  <div class="col-md-9 col-lg-7">
+                    <div class="row justify-content-center">
+                      <div class="col-md-11 col-lg-9">
+                        <h2>Field Guides Early Access</h2>
+                        <p class="lead">Subscribe to our mailing list and be the first to learn when they are published. Or volunteer to help read or edit an early draft!</p>
+                        <form action="https://sproutfund.us4.list-manage.com/subscribe/post-json?u=d88590060b35162f56ec6156c&amp;id=899a6287bc&amp;c=?" class="form--active" novalidate="novalidate" _lpchecked="1">
+                          <div class="row">
+                            <div class="col-12">
+                              <input class="validate-required validate-email" id="mce-EMAIL" name="EMAIL" placeholder="Email Address" type="text" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                            </div>
+                            <div class="d-none d-md-block col-md-4 " style="padding-right: .25em;">
+                              <input id="mce-FNAME" name="FNAME" placeholder="First Name" type="text">
+                            </div>
+                            <div class="d-none d-md-block col-md-4 unpad" style="padding-left: .25em;">
+                              <input id="mce-LNAME" name="LNAME" placeholder="Last Name" type="text">
+                            </div>
+                            <div class="col-6 col-md-4">
+                              <button class="btn btn--primary" type="submit">Subscribe</button>
+                            </div>
+                          </div>                          
+                        </form>
+                      </div><!--end of col-->
+                    </div><!--end of row-->
+                  </div>
+                </div><!--end of row-->
+              </div><!--end of container-->
+            </section>
+          </div>
+        </div>        
       </section>
       
       <!--Social/CTA-->
       <section class="switchable imagebg switchable--switch" data-gradient-bg="#fee526,#fd9f06,#f96e00,#9f1200,#bf5b04,#0b0904"><!-- #925a1f,#4b1501,-->
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row">
             <div class="col-md-6 col-lg-5">
-              <div class="switchable__text">
+              <div class="switchable__text" style="margin-top:0;">
                 <h2>Celebrate <b>#SproutSunset</b></h2>
                 <p class="lead">Our impact will live on through thousands of people working hard every day to make Pittsburgh better for all.</p>
                 <!--Twitter/Facebook buttons-->
@@ -181,10 +220,14 @@
                 <p><a class="btn btn--primary btn--icon" href="https://paypal.me/sproutfund" target="_blank"><span class="btn__text"><i class="icon-Dollar-Sign2"></i>Make a Gift</span></a></p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6 offset-lg-1 d-none d-sm-block">
               <!--Twitter feed-->
-              <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3Asproutfund%20OR%20%40sproutfund%20OR%20%23SproutSunset%20-RT" data-widget-id="980925223636754432">Recent Tweets</a>
+              <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3Asproutfund%20OR%20%40sproutfund%20OR%20%23SproutSunset%20-RT" data-widget-id="980966758495477761">Tweets about from:sproutfund OR @sproutfund OR #SproutSunset -RT</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+              
+              <!--<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3Asproutfund%20OR%20%40sproutfund%20OR%20%23SproutSunset%20-RT" data-widget-id="980925223636754432">Recent Tweets</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
             </div>
           </div>
         </div>
@@ -236,9 +279,294 @@
         </div>
       </section>
       
+      <section class="imageblock switchable feature-large">
+        <div class="imageblock__content col-md-6 col-sm-4 pos-right">
+          <div class="background-image-holder" style="background: url(&quot;http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/bkgd_knit-the-bridge.jpg&quot;); opacity: 1;"><img alt="image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/bkgd_knit-the-bridge.jpg"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-7">
+              <h1 id="story">Our Story <span style="background-color:yellow;">--EDIT ME--</span></h1>
+              <p class="lead">Communities are better places to live, learn, and thrive because of the people and ideas supported by The Sprout Fund.</p>
+              <p>We help projects and programs in the early stages of development—when just a small amount of investment has the potential to yield big results in the community. Since 2001, we’ve worked with regional and national philanthropic partners to build strong networks and make nearly $7 million of community-decided investments in more than 1,000 early-stage projects, organizations, innovators, and activities.</p>
+              <p>Led by our co-founders, powered by a dedicated staff, and governed by an engaged board of young community leaders, Sprout is a national leader in responsive philanthropy, participatory events, and effective networks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--Our Team-->
+      <section class="bg--dark space--xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 id="team">Our Team</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center bg--dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-left">Staff</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_cathy.jpg" class="img-thumbnail">
+                <h5>Cathy Lewis Long</h5><span>Co-Founder &amp; Executive Director</span><br><a title="Email Cathy" href="mailto:cathy@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Cathy’s Twitter" href="https://twitter.com/cathylewislong" target="_blank" class="staff-contact-link"><i class="fab fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Cathy’s LinkedIn" href="https://www.linkedin.com/in/cathylewislong/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_matt.jpg" class="img-thumbnail">
+                <h5>Matt Hannigan</h5><span>Co-Founder &amp; Deputy Director</span><br><a title="Email Matt" href="mailto:matt@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Matt’s LinkedIn" href="https://www.linkedin.com/in/matthannigan/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_diana.jpg" class="img-thumbnail">
+                <h5>Diana Avart</h5><span>Program Associate</span><br><a title="Email Diana" href="mailto:diana@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Diana’s LinkedIn" href="https://www.linkedin.com/in/dianaavart/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!--<div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_ryan.jpg" class="img-thumbnail">
+                <h5>Ryan Coon</h5><span>Program Officer</span><br/><a title="Email Ryan" href="mailto:ryan@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Ryan’s LinkedIn" href="https://www.linkedin.com/in/ryan-coon-7362b34/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>-->
+            <!--<div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_arielle.jpg" class="img-thumbnail">
+                <h5>Arielle Evans</h5><span>Program Associate</span><br/><a title="Email Arielle" href="mailto:arielle@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Arielle’s Twitter" href="https://twitter.com/arielleevans" target="_blank" class="staff-contact-link"><i class="fab fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Arielle’s LinkedIn" href="https://www.linkedin.com/in/arielleevans/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>-->
+            <!--<div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_mac.jpg" class="img-thumbnail">
+                <h5>Mac Howison</h5><span>Senior Program Officer</span><br/><a title="Email Mac" href="mailto:mac@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Mac’s Twitter" href="https://twitter.com/machowison" target="_blank" class="staff-contact-link"><i class="fab fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Mac’s LinkedIn" href="https://www.linkedin.com/in/mac-howison/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>-->
+            <div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_tricia.jpg" class="img-thumbnail">
+                <h5>Tricia Monticello Kievlan</h5><span>Program Associate</span><br><a title="Email Tricia" href="mailto:tricia@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Tricia’s Twitter" href="https://twitter.com/PMKievlan" target="_blank" class="staff-contact-link"><i class="fab fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Tricia’s LinkedIn" href="https://www.linkedin.com/in/pmkievlan/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!--<div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_lizzy.jpg" class="img-thumbnail">
+                <h5>Lizzy Nolin</h5><span>Communications Assistant</span><br/><a title="Email Lizzy" href="mailto:lizzy@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>
+              </div>
+            </div>-->
+            <div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_dustin.jpg" class="img-thumbnail">
+                <h5>Dustin Stiver</h5><span>Senior Program Officer</span><br><a title="Email Dustin" href="mailto:dustin@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Dustin’s Twitter" href="https://twitter.com/DustinStiver" target="_blank" class="staff-contact-link"><i class="fab fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Dustin’s LinkedIn" href="https://www.linkedin.com/in/dustinstiver/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!--<div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_cleo.jpg" class="img-thumbnail">
+                <h5>Cleo Zell</h5><span>Office Manager</span><br/><a title="Email Cleo" href="mailto:cleo@sproutfund.org" class="staff-contact-link"><i class="fab fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;<a title="Cleo’s LinkedIn" href="https://www.linkedin.com/in/cleozell/" target="_blank" class="staff-contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>-->
+            <div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_friday.jpg" class="img-thumbnail">
+                <h5>Friday</h5><span>Dog</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="feature feature-8">
+                <img alt="Image" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/photos/team_summit.jpg" class="img-thumbnail">
+                <i>and dozens of talented writers, photographers, filmmakers, facilitators, contractors, and advisors</i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <hr style="padding-bottom: 2em; margin-top: 2em; margin-bottom: 2em;">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <h2 class="text-left">Board</h2>
+              <p class="lead text-left">We are directed by a board of community leaders who champion civic action in our hometown of Pittsburgh.</p>
+            </div>
+            <div class="col-12 col-md-9" id="board-list">
+              <div class="row">
+                <div class="col-6 col-md-4 feature">
+                  <h5>Mark Broadhurst, <i>Chair</i></h5><span>Eat’n Park Hospitality Group</span>
+                </div>
+                <div class="col-6 col-md-4 feature">
+                  <h5>Dan Byers, <i>Secretary</i></h5><span>Carpenter Center for the Visual Arts at Harvard University</span>
+                </div>
+                <div class="col-6 col-md-4 feature">
+                  <h5>Megan Cicconi</h5><span>Fox Chapel Area School District</span>
+                </div>
+                <div class="col-6 col-md-4 feature">
+                  <h5>Meredith Grelli</h5><span>Wigle Whiskey</span>
+                </div>
+                <div class="col-6 col-md-4 feature">
+                  <h5>Mike Haggerty, <i>Treasurer</i></h5><span>The Hillman Company</span>
+                </div>
+                <div class="col-6 col-md-4 feature">
+                  <h5>Alexis Howard</h5><span>Pittsburgh Public Schools</span>
+                </div>
+                <div class="col-6 col-md-4 feature">
+                  <h5>Cathy Lewis Long, <i>President</i></h5><span>The Sprout Fund</span>
+                </div>
+                <div class="col-6 col-md-4 feature">
+                  <h5>Henry J. Simonds, <i>Emeritus</i></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--Our Friends-->
+      <section class="space--xs bg--secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 id="friends">Our Friends</h1>
+              <p class="lead">Thank you to our recent supporters, partners, and collaborators!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg--secondary">
+        <div class="container">
+          <div class="col">
+            <div class="slider slider--columns text-center" data-arrows="false" data-paging="false" data-timing="2000">
+              <ul class="slides">
+                <li class="col-sm-2 col-4"><a href="http://www.county.allegheny.pa.us/" target="_blank" title="Allegheny County"><img alt="Allegheny County" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_allegheny-county.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://www.benedum.org/" target="_blank" title="Claude Worthington Benedum Foundation"><img alt="Claude Worthington Benedum Foundation" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_benedum-fdn.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://www.buhlfoundation.org/" target="_blank" title="The Buhl Foundation"><img alt="The Buhl Foundation" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_buhl-fdn.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://corporate.comcast.com/our-values/community-investment/philanthropy-partnerships" target="_blank" title="Comcast NBCUniversal" style="-webkit-filter: contrast(90%); filter: contrast(90%);"><img alt="Comcast NBCUniversal" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_comcast-nbcuniversal.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://creativemornings.com/" target="_blank" title="CreativeMornings"><img alt="CreativeMornings" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_creativemornings.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://digitalpromise.org/" target="_blank" title="Digital Promise"><img alt="Digital Promise" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_digital-promise.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://www.fundersnetwork.org/" target="_blank" title="Funders’ Network for Smart Growth and Livable Communities"><img alt="Funders’ Network for Smart Growth and Livable Communities" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_funders-network.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://www.geofunders.org/" target="_blank" title="Grantmakers for Effective Organizations"><img alt="Grantmakers for Effective Organizations" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_geo.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://forbesfunds.org/gpnp" target="_blank" title="Greater Pittsburgh Nonprofit Partnership"><img alt="Greater Pittsburgh Nonprofit Partnership" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_gpnp.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://grable.org/" target="_blank" title="The Grable Foundation"><img alt="The Grable Foundation" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_grable-fdn.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://www.grassrootsgrantmakers.org/" target="_blank" title="Grassroots Grantmakers"><img alt="Grassroots Grantmakers" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_grassroots-grantmakers.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://gwpa.org/" target="_blank" title="Grantmakers of Western Pennsylvania"><img alt="Grantmakers of Western Pennsylvania" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_gwpa.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://www.heinz.org/" target="_blank" title="The Heinz Endowments"><img alt="The Heinz Endowments" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_heinz-endowments.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://hillmanfamilyfoundations.org/" target="_blank" title="Hillman Family Foundations"><img alt="Hillman Family Foundations" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_hillman-fdn.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://www.lrng.org/" target="_blank" title="LRNG"><img alt="LRNG" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_lrng.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://www.macfound.org/" target="_blank" title="John D. and Catherine T. MacArthur Foundation"><img alt="John D. and Catherine T. MacArthur Foundation" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_macarthur-fdn.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://pittsburghpa.gov/mayor/mbk/index.html" target="_blank" title="My Brother's Keeper Pittsburgh-Allegheny County" style="-webkit-filter: contrast(80%); filter: contrast(80%);"><img alt="My Brother's Keeper Pittsburgh-Allegheny County" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_mbk-pittsburgh.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://www.mozilla.org/en-US/" target="_blank" title="Mozilla" style="-webkit-filter: contrast(80%); filter: contrast(80%);"><img alt="Mozilla" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_mozilla.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://www.onenorthsidepgh.org/" target="_blank" title="One Northside" style="-webkit-filter: contrast(80%); filter: contrast(80%);"><img alt="One Northside" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_one-northside.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://obamawhitehouse.archives.gov/administration/eop/ostp/" target="_blank" title="Obama Office of Science &amp; Technology Policy"><img alt="Obama Office of Science &amp; Technology Policy" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_ostp.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://pittsburghpa.gov/" target="_blank" title="City of Pittsburgh"><img alt="City of Pittsburgh" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_pittsburgh-city.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="https://pittsburghfoundation.org/" target="_blank" title="The Pittsburgh Foundation" style="-webkit-filter: contrast(90%); filter: contrast(90%);"><img alt="The Pittsburgh Foundation" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_pittsburgh-fdn.png"></a></li>
+                <li class="col-sm-2 col-4"><a href="http://remakelearning.org/" target="_blank" title="Remake Learning"><img alt="Remake Learning" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/friend_remake-learning.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--Contact Us-->
+      <section class="space--xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 id="contact">Contact Us</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="switchable">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 offset-md-1 col-sm-5">
+              <div class="switchable__text">
+                <h3 class="visible-sm-block visible-md-block visible-lg-block">6101 Penn Avenue, Suite 102<br>
+                Pittsburgh, Pennsylvania<span class="visible-md-inline visible-lg-inline">, USA<br></span> 15206-3956</h3>
+                <p class="lead"><span class="visible-xs-inline"><i class="fas fa-map-marker fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://www.google.com/maps/place/The+Sprout+Fund/@40.461264,-79.9255507,17z/" target="_blank">6101 Penn Ave Ste 102, Pittsburgh, PA 15206</a><br></span><i class="fas fa-phone fa-fw" aria-hidden="true"></i>&nbsp;<span class="hidden-xs">phone </span><a href="tel:+14123250646" rel="nofollow">+1 (412) 325-0646</a><br><i class="fas fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<span class="hidden-xs">email </span><a href="mailto:connect@sproutfund.org">connect@sproutfund.org</a></p>
+                <p class="lead">You can reach any Sprout team member via the email formula: «firstname»@sproutfund.org</p>
+                <p class="lead">Our storefront office is open to the public each weekday from 9am–5:30pm.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-7 hidden-xs">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48570.12449099331!2d-79.95838092207376!3d40.46126397936005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f26eb0b6424b%3A0x8c4593e9d63b275c!2sThe+Sprout+Fund!5e0!3m2!1sen!2sus!4v1507218564907" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+              <!--<div class="map-container border--round" data-address="6101 Penn Ave Ste 102, Pittsburgh, PA 15206" data-map-style="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]" data-map-zoom="15" data-maps-api-key="AIzaSyCfo_V3gmpPm1WzJEC9p_sRbgvyVbiO83M" data-marker-title="Stack"></div>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--Footer-->
+      <footer class="space--xs footer-1 text-center-xs bg--secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <ul class="list-inline list--hover">
+                <!--<li>
+                  <div class="modal-instance">
+                    <a class="modal-trigger" href="#about-modal">
+                      <span>About Sprout</span>
+                    </a>
+                    <div class="modal-container">
+                      <div class="modal-content" id="about-modal">
+                        <div class="boxed boxed--lg">
+                          <h2>About The Sprout Fund</h2>
+                          <hr class="short">
+                          <p class="lead">Communities are better places to live, learn, and thrive because of the people and ideas supported by Sprout.</p> <p>Sprout helps projects and programs in the early stages of development—when just a small amount of investment has the potential to yield big results in the community. Since 2001, Sprout has worked with regional and national philanthropic partners to build strong networks and make nearly $7 million of community-decided investments in more than 1,000 early-stage projects, organizations, innovators, and activities.</p>
+                          <p>Led by its co-founders, powered by a dedicated staff, and governed by an engaged board of young community leaders, Sprout is a national leader in responsive philanthropy, participatory events, and effective networks.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>-->
+                <li>
+                  <a href="#sunset"><span>Our Sunset</span></a>
+                </li>
+                <li>
+                  <a href="#plans"><span>Our Plans</span></a>
+                </li>
+                <li>
+                  <a href="#story"><span>Our Story</span></a>
+                </li>
+                <li>
+                  <a href="#team"><span>Our Team</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 text-right text-center-xs">
+              <ul class="social-list list-inline list--hover">
+                <li>
+                  <a title="Twitter" href="https://twitter.com/sproutfund" target="_blank"><i class="socicon socicon-twitter icon icon--xs"></i></a>
+                </li>
+                <li>
+                  <a title="Facebook" href="https://www.facebook.com/sproutfund" target="_blank"><i class="socicon socicon-facebook icon icon--xs"></i></a>
+                </li>
+                <li>
+                  <a title="LinkedIn" href="https://www.instagram.com/sproutfund/" target="_blank"><i class="socicon socicon-instagram icon icon--xs"></i></a>
+                </li>
+              </ul><a class="btn type--uppercase" href="#contact"><span class="btn__text" style="color: #666666;">Contact Us</span></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <a href="#home"><img alt="Image" class="logo" src="http://www.sproutfund.org/wp-content/themes/debut_sproutfund_2013-11/new_sprout/logos/sprout_grey-circle.png"></a> <span class="type--fine-print">This work by The Sprout Fund is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
     </div><!--.main-container-->
 
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/flickity.min.js"></script>
+    <!--<script src="js/lightbox.min.js"></script>-->
     <script src="js/granim.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>
