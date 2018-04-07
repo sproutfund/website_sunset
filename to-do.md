@@ -1,9 +1,9 @@
 # To-Do List
 
 ## Website
-[ ] add clearstory logo
-[ ] add fine print modal
-[ ] add ideals modal
+- [] add clearstory logo
+- [] add fine print modal
+- [] add ideals modal
 
 ## Mailchimp
 [ ] bring in emails from the notifications
