@@ -2,9 +2,9 @@
 Website for announcing The Sprout Fund's sunset in 2018. To-Do:
 
 ## Website
-- [ ] add clearstory logo
-- [ ] add fine print modal
-- [ ] add ideals modal
+- [X] add clearstory logo
+- [X] add fine print modal
+- [X] add ideals modal
 
 ## Mailchimp
 - [ ] bring in emails from the notifications
