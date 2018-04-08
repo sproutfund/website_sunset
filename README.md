@@ -30,8 +30,7 @@ Website for announcing The Sprout Fund's sunset in 2018. To-Do:
 - [ ] like/fav shares, tweets, IG posts
 
 ## Zapier
-- [ ] hook #SproutSunset tweets to a Google Sheet
-- [ ] print card?
+- [X] hook #SproutSunset social stuff to a Google Sheet
 
 ## Press Release 
 - [ ] send final to Joanna, with both photos
