@@ -34,5 +34,5 @@ Website for announcing The Sprout Fund's sunset in 2018. To-Do:
 - [ ] print card?
 
 ## Press Release 
-- [ ] send final to Joanna
+- [ ] send final to Joanna, with both photos
 - [ ] add somewhere discreet to the website?
