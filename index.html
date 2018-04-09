@@ -246,8 +246,12 @@
                 </div>
               </div>
               <div class="row" style="padding-top: 10px; padding-bottom: 25px;">
-                <div class="col">
+                <div class="col d-block d-sm-none">
                   <a class="btn btn-block btn--icon bg--instagram" href="instagram://tag?name=SproutSunset" target="_blank"
+                  ><span class="btn__text"><i class="socicon socicon-instagram"></i>Post</span></a>
+                </div>
+                <div class="col d-none d-sm-block">
+                  <a class="btn btn-block btn--icon bg--instagram" href="https://www.instagram.com/explore/tags/SproutSunset/" target="_blank"
                   ><span class="btn__text"><i class="socicon socicon-instagram"></i>Post</span></a>
                 </div>
                 <div class="col">
@@ -803,19 +807,19 @@
                     <div class="col-md-11 col-lg-9">
                       <h2>Field Guides Early Access</h2>
                       <p class="lead">Subscribe to our mailing list and be the first to learn when they are published. Or volunteer to help read or edit an early draft!</p>
-                      <form action="https://sproutfund.us4.list-manage.com/subscribe/post-json?u=d88590060b35162f56ec6156c&amp;id=899a6287bc&amp;c=?" class="form--active" novalidate="novalidate" _lpchecked="1">
+                      <form action="https://docs.google.com/forms/d/e/1FAIpQLSePGPHCfeUuNTtumaymO5_7muvMgg9ri-GxLegl8HLaXVwRtw/formResponse" method="post" target="_blank" class="form--active">
                         <div class="row">
                           <div class="col-12">
-                            <input class="validate-required validate-email" id="mce-EMAIL" name="EMAIL" placeholder="Email Address" type="text" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                            <input id="" name="emailAddress" placeholder="Email Address" type="text" autocomplete="email" >
                           </div>
                           <div class="d-none d-md-block col-md-4 " style="padding-right: .25em;">
-                            <input id="mce-FNAME" name="FNAME" placeholder="First Name" type="text">
+                            <input id="" name="entry.164685635" placeholder="First Name" type="text">
                           </div>
                           <div class="d-none d-md-block col-md-4 unpad" style="padding-left: .25em;">
-                            <input id="mce-LNAME" name="LNAME" placeholder="Last Name" type="text">
+                            <input id="" name="entry.1306230339" placeholder="Last Name" type="text">
                           </div>
                           <div class="col-6 col-md-4">
-                            <button class="btn btn--primary" type="submit">Subscribe</button>
+                            <button class="btn btn--primary" type="submit" id="field-guide-signup">Sign-up</button>
                           </div>
                         </div>                          
                       </form>
@@ -906,7 +910,7 @@
     <script src="assets/js/scripts.js"></script>
     <script>
       //mr.modals.documentReady = function($){
-      //  jQuery(document).on('click', '.modal-close', mr.modals.closeActiveModal);
+      //  jQuery(document).on('click', '#field-guide-signup', mr.modals.closeActiveModal);
       //}
     </script>
     
