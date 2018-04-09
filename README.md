@@ -8,19 +8,18 @@ Website for announcing The Sprout Fund's sunset in 2018. To-Do:
 - [X] turn on Google Analytics
 
 ## Mailchimp
-- [ ] bring in emails from the notifications
+- [X] bring in emails from the notifications
 - [ ] bring in randos
 
 ## Notifications Sheet
-- [ ] try to track down missing emails
-- [ ] divide up notifications sheet
-- [ ] flag people for coffee/drink
-- [ ] flag people for party?
-- [ ] add EOY2017 donors
+- [X] try to track down missing emails
+- [X] divide up notifications sheet
+- [X] flag people for party?
+- [X] add EOY2017 donors
 
 ## Emails
-- [ ] board message explaining things--must go no later than Sunday
-- [ ] edit "sharing this news" personally
+- [X] board message explaining things--must go no later than Sunday
+- [X] edit "sharing this news" personally
 
 ## Social
 - [ ] Facebook
