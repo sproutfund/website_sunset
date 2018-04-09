@@ -29,10 +29,11 @@ Website for announcing The Sprout Fund's sunset in 2018. To-Do:
 - [ ] LinkedIn
 - [ ] ready HootSuite
 - [ ] like/fav shares, tweets, IG posts
+- [ ] retweet news stories
 
 ## Zapier
 - [X] hook #SproutSunset social stuff to a Google Sheet
 
 ## Press Release 
-- [ ] send final to Joanna, with both photos
+- [X] send final to Joanna, with both photos
 - [X] add somewhere discreet to the website?
